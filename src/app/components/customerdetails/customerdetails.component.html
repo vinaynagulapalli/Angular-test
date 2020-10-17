@@ -1,0 +1,71 @@
+<section>
+
+  <div class="row">
+
+    <div class="col-md-9">
+      <app-home></app-home>
+    </div>
+
+    <div class="col-md-3">
+
+      <div class="card">
+
+        <div class="card-header">
+          <img src="/assets/images/image.png" class="logo">
+          <button class="close-btn" routerLink=""><img src="assets/svg/close-icon-blue.svg"></button>
+        </div>
+
+        <div class="card-body ">
+          <div class="row text-center ">
+
+            <div class="col-sm">
+              <img class="pb-1" src="/assets/svg/product.svg">
+              <p>Product Details</p>
+            </div>
+
+            <div class="col-sm">
+              <img class="pb-1" src="/assets/svg/contact-information.svg">
+              <p>Customer Details</p>
+            </div>
+
+            <div class="col-sm">
+              <img class="pb-1" src="/assets/svg/credit-card.svg">
+              <p>Payment Details</p>
+            </div>
+
+          </div>
+          <div class="pt-2 ">
+            <div [formGroup]="customerDetails">
+              <label>Name</label><br>
+              <input type="text" formControlName="name"><br>
+              <label>Email ID</label><br>
+              <input type="text" formControlName="email"><br>
+              <label>Phone Number</label><br>
+              <input type="text" formControlName="phoneNo"><br>
+              <label>PAN or Aadhar</label><br>
+              <input type="text" formControlName="proof">
+              <h3>Address Details</h3>
+              <label>Address</label><br>
+              <input type="text" formControlName="address"> 
+                <label>City</label><br>
+              <input type="text" formControlName="city"> 
+                <label>Pincode</label><br>
+              <input type="text" formControlName="pincode">
+            </div>
+          </div>
+
+          
+
+          
+          <button routerLink="/billing/customer/payment" (click)="customerdetails()" class="btn btn-primary btn-block">Submit & Go to Payment Info</button>
+
+        </div>
+        
+      
+
+      </div>
+    </div>
+
+  </div>
+
+</section>

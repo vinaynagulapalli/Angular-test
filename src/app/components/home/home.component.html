@@ -1,0 +1,23 @@
+<header>
+
+  <section id="bg-img">
+ <section class="home">
+    <div class="row">
+      <div class="col-sm pl-5"> 
+        <img src="/assets/images/image.png" class="logo">
+      </div>
+      <div class="col-sm text-center">
+         <a  ><img (click)="on()" *ngIf="flag" src="/assets/svg/mic-on.svg"></a>
+         <a class="mr-3" ><img (click)="off()" *ngIf="!flag" src="/assets/svg/mute.svg"></a>
+        <a class="mr-3" ><img (click)="videoon()" *ngIf="video" src="/assets/svg/camera-on.svg"></a>
+        <a class="mr-3" ><img (click)="videooff()" *ngIf="!video" src="/assets/svg/video-off.svg"></a>
+        <a href="#"><img (click)="clear()" src="/assets/svg/end-call.svg"></a></div>
+      <div class="col-sm text-center ml-3 end-div">
+        <button routerLink="/billing" (click)="removeproduct()" id="lost" class="btn btn-light mr-3 home-btn">Start Billing</button>
+        <img src="/assets/svg/capture.svg">&nbsp;&nbsp;&nbsp;<span class="text-white">Exit Full Screen</span></div>
+    </div>
+  </section>
+  </section>
+ 
+</header>
+

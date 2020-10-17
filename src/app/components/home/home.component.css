@@ -1,0 +1,30 @@
+
+header #bg-img{
+
+  background-image: url('/assets/dragonfly.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100%;
+
+} 
+.home{
+    position: relative;
+    top: 85%;
+    
+}
+.logo{
+    height: 50px;
+    width: 100px;
+}
+.home-btn{
+    font-size: 12px;
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+.end-div{
+    margin-top: 15px;
+}
+

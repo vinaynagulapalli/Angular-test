@@ -1,0 +1,27 @@
+.card{
+    border: none;
+    width: 100%;
+    padding: 0;
+}
+.logo{
+    height: 35px;
+    width: 100px;
+}
+.close-btn{
+    border: none;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+}
+.card-body p{
+    font-size: 12px;
+}
+input{
+    border:none ;
+    border-bottom: 1px solid gray;
+    width: 100%;
+
+}
+.confirm {
+    margin-top: 200px;
+}

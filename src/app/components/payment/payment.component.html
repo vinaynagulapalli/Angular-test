@@ -1,0 +1,146 @@
+<section>
+
+  <div class="row">
+
+    <div class="col-md-9">
+      <app-home></app-home>
+    </div>
+
+    <div class="col-md-3">
+
+      <div class="card">
+
+        <div class="card-header">
+          <img src="/assets/images/image.png" class="logo">
+          <button class="close-btn" routerLink=""><img src="assets/svg/close-icon-blue.svg"></button>
+        </div>
+
+        <div class="card-body ">
+          <div class="row text-center ">
+
+            <div class="col-sm">
+              <img class="pb-1" src="/assets/svg/product.svg">
+              <p>Product Details</p>
+            </div>
+
+            <div class="col-sm">
+              <img class="pb-1" src="/assets/svg/contact-information.svg">
+              <p>Customer Details</p>
+            </div>
+
+            <div class="col-sm">
+              <img class="pb-1" src="/assets/svg/credit-card.svg">
+              <p>Payment Details</p>
+            </div>
+
+          </div>
+          
+
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input justify-content-start " id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">
+              <img class="mr-3" src="/assets/svg/cash-on-delivery.svg" alt="">
+              <span>Cash on Delivery</span>
+            </label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input justify-content-start " id="customCheck2">
+            <label class="custom-control-label" for="customCheck2">
+              <img class="mr-3" src="/assets/svg/credit-card-two.svg" alt="">
+              <span>Online Banking</span>
+            </label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input (click)="display()" type="checkbox" class="custom-control-input justify-content-start " id="customCheck3">
+            <label class="custom-control-label" for="customCheck3">
+              <img class="mr-3" src="/assets/svg/store-pick.png" alt="">
+              <span>Pick up from Store</span>
+            </label>
+          </div>
+
+          
+          <div class="dropdown" *ngIf="flag">
+            <button  class="btn btn-secondary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Please Select Store
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <option class="dropdown-item" value="Kukatpally">Kukatpally</option>
+              <option class="dropdown-item" value="kondapur">kondapur</option>
+              <a class="dropdown-item" value="Mothi Nagar">Mothi Nagar</a>
+            </div>
+            <div class="card-footer text-muted">
+              <div class="row">
+
+                <div class="col-sm d-flex justify-content-start ">
+                  <b>Grand Total</b>
+                </div>
+
+                <div class="col-sm">
+                  <b> $19,326.00</b>
+                </div>
+
+              </div>
+            </div>
+            <button routerLink="/billing/customer/payment/confirm" class="btn btn-primary btn-block">Sumbit</button>
+
+          </div>
+         
+
+          <div class="card text-center" *ngIf="!flag">
+
+            <div class="card-header">
+              <label>ORDER SUMMARY</label>
+            </div>
+
+            <div class="card-body">
+              <table class="table">
+
+                <tbody>
+                  <tr>
+                    <td class="d-flex justify-content-start">Discount</td>
+                    <td>6993.00</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex justify-content-start">Taxable Amount</td>
+                    <td>187695.43</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex justify-content-start">SGST</td>
+                    <td>1.5%</td>
+                  </tr>
+                  <tr>
+                    <td class="d-flex justify-content-start">CGST</td>
+                    <td>1.5%</td>
+                  </tr>
+                </tbody>
+
+              </table>
+
+              <div class="card-footer text-muted">
+                <div class="row">
+
+                  <div class="col-sm d-flex justify-content-start ">
+                    <b>Grand Total</b>
+                  </div>
+
+                  <div class="col-sm">
+                    <b> $19,326.00</b>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <button routerLink="/billing/customer/payment/confirm" class="btn btn-primary btn-block">Sumbit</button>
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
